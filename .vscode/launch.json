@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MCP Server",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.server",
+      "console": "integratedTerminal",
+      "env": {
+        "MCP_LOG_LEVEL": "DEBUG",
+        "PYTHONPATH": "${workspaceFolder}"
+      },
+      "justMyCode": false
+    },
+    {
+      "name": "Debug Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
